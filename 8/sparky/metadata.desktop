@@ -1,0 +1,16 @@
+[SddmGreeterTheme]
+Name=sparky
+Description=A theme for SDDM based on Chili
+Author=Marian Alexander Arlt, pavroo
+Copyright=(c) 2018, Marian Alexander Arlt
+Email=marianarlt@icloud.com
+License=GPLv3
+Type=sddm-theme
+Version=0.1.5
+Website=https://github.com/MarianArlt/sddm-theme-chili
+Screenshot=preview.jpg
+MainScript=Main.qml
+ConfigFile=theme.conf
+TranslationsDirectory=translations
+Theme-Id=sparky
+Theme-API=2.0
