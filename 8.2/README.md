@@ -1,5 +1,5 @@
 Sparky SDDM Theme2
-  Sparky 8.x SDDM Theme2 based on Sugar Candy
+  Sparky 8.x SDDM Theme2 for Kf6 based on Breeze
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -17,13 +17,15 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 Depends:
 ------------
 grep
-sddm
+sddm (>= 0.21.0-2)
 qml-module-qtquick-controls
 qml-module-qtquick-controls2
 qml-module-qtgraphicaleffects
 qml-module-qtquick-layouts
 qml-module-qtquick-extras
 qml-module-qtquick-virtualkeyboard
+plasma-desktoptheme
+plasma-workspace
 
 Install:
 -------------
