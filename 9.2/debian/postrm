@@ -1,0 +1,17 @@
+#!/bin/sh
+# postrm script
+#
+# see: dh_installdeb(1)
+
+set -e
+
+if [ "$1" = "remove" ] || [ "$1" = "purge" ]; then
+	if [ -f /etc/sddm.conf ]; then
+		if [ "`cat /etc/sddm.conf | grep sparky2`" = "" ]; then
+			rm -f /etc/sddm.conf
+		fi
+	fi
+fi
+
+exit 0
+

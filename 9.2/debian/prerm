@@ -1,0 +1,22 @@
+#!/bin/sh
+# postrm script
+#
+# see: dh_installdeb(1)
+
+set -e
+
+if [ "$1" = "remove" ] || [ "$1" = "purge" ]; then
+	if [ -f /etc/sddm-old2.conf ]; then
+		if [ -f /etc/sddm.conf ]; then
+			rm -f /etc/sddm.conf
+		fi
+		mv /etc/sddm-old2.conf /etc/sddm.conf
+	else
+		if [ -f /etc/sddm.conf ]; then
+			rm -f /etc/sddm.conf
+		fi
+	fi
+fi
+
+exit 0
+
